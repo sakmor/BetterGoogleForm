@@ -1,12 +1,12 @@
 # Better Google Form Filler Support
 
-If you need help with Better Google Form Filler, use one of the support channels below after replacing the placeholders with your real links.
+If you need help with Better Google Form Filler, use one of the support channels below.
 
-## Recommended support channels
+## Support channels
 
-- Issue tracker: `https://github.com/<your-account>/<your-repo>/issues`
-- Documentation: `https://github.com/<your-account>/<your-repo>`
-- Support email: `<your-support-email>`
+- Issue tracker: `https://github.com/sakmor/BetterGoogleForm/issues`
+- Documentation: `https://github.com/sakmor/BetterGoogleForm`
+- Support email: `sakmor@gmail.com`
 
 ## What to include in a bug report
 

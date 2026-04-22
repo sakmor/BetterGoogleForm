@@ -10,15 +10,19 @@ This folder contains the draft materials needed to publish Better Google Form Fi
 - [REVIEWER-NOTES.md](./REVIEWER-NOTES.md): draft reviewer instructions and test setup notes
 - [SUBMISSION-CHECKLIST.md](./SUBMISSION-CHECKLIST.md): final pre-submit checklist
 
-## Before you submit
+## Project details already filled in
 
-Replace all placeholders:
+- Repository: `https://github.com/sakmor/BetterGoogleForm`
+- Support URL: `https://github.com/sakmor/BetterGoogleForm/issues`
+- Support email: `sakmor@gmail.com`
+- Privacy policy URL: `https://github.com/sakmor/BetterGoogleForm/blob/main/PRIVACY.md`
 
-- `<your-account>`
-- `<your-repo>`
-- `<your-support-email>`
-- test spreadsheet and form URLs
-- any final store copy that should reflect your actual branding
+## Still needs your final manual input
+
+- final Chrome Web Store screenshots
+- store icon / promo tile selection if you create alternates
+- real OAuth client ID in the release build
+- any final store copy tweaks after you test the live build
 
 ## Official references used
 

@@ -4,14 +4,14 @@ Use this as the basis for the Developer Dashboard "Test instructions" tab if you
 
 ## Best review setup
 
-The cleanest review setup is:
+The review setup for this extension is public-link based:
 
-- a public or reviewer-accessible Google Form test page,
-- a reviewer-accessible Google Sheets test spreadsheet,
-- no paid account requirement,
-- no private backend requirement.
+- Google Form test page is accessible to anyone with the link
+- Google Sheets test spreadsheet is accessible to anyone with the link
+- no paid account is required
+- no private backend is required
 
-If you can provide that setup, reviewers may not need extra credentials.
+Reviewers should still sign into a normal Google account when testing, because the extension uses Google OAuth to read spreadsheet data.
 
 ## Draft reviewer instructions
 
@@ -22,35 +22,32 @@ If you can provide that setup, reviewers may not need extra credentials.
 5. Save settings.
 6. Open the provided Google Forms `viewform` URL.
 7. Open the extension popup and click `Open panel`, or click the in-page launcher button.
-8. Search for one of the provided sample records.
+8. Search for the provided sample record.
 9. Click `Apply this record`.
 10. Confirm that matching fields in the form are populated.
 
-## Information to prepare before submission
+## Review test data
 
-- Test spreadsheet URL: `<paste test spreadsheet URL here>`
-- Test sheet name: `<paste test sheet name here>`
-- Test Google Form URL: `<paste test form URL here>`
-- Test record examples:
-  - `<example record 1>`
-  - `<example record 2>`
+- Test spreadsheet URL: `https://docs.google.com/spreadsheets/d/1VRYSPPkrxZzdfhrxUyf5cm5EN-F6ShYpos1tk28jOXU/edit?resourcekey=&gid=372858698#gid=372858698`
+- Test sheet name: `Form Reply`
+- Test Google Form URL: `https://docs.google.com/forms/d/e/1FAIpQLSeb9Yy_P-et9ijhr31x4Ijyn3TTutlPAGEGl3WMqncxetn07g/viewform`
+- Sample record to search:
+  - `Full Name: Donald Duck`
+  - `Gender: Male`
+  - `Hobbies: Music, Reading`
 
 ## If a reviewer account is required
 
-Only add credentials if they are truly needed. If needed, provide:
-
-- Google account email: `<reviewer test account>`
-- Password or access method: `<temporary reviewer credential>`
-- Any MFA bypass instructions if applicable
+No special reviewer account or pre-shared credential is required beyond a normal Google account for the OAuth sign-in flow.
 
 ## Expected result
 
 When the extension is configured with the provided sheet and opened on the provided Google Form, the reviewer should be able to:
 
 - load records from the spreadsheet,
-- search for a record,
+- search for the sample record,
 - apply that record to the form,
-- see text, checkbox, radio, and dropdown fields filled where labels match.
+- see supported text, checkbox, radio, and dropdown fields filled where labels match.
 
 ## Notes for reviewers
 

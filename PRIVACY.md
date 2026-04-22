@@ -72,10 +72,10 @@ The use of information received from Google APIs will adhere to the Chrome Web S
 
 ## Contact
 
-For support or privacy questions, replace this placeholder with your real support channel before publishing:
+For support or privacy questions:
 
-- Support URL: `https://github.com/<your-account>/<your-repo>/issues`
-- Support email: `<your-support-email>`
+- Support URL: `https://github.com/sakmor/BetterGoogleForm/issues`
+- Support email: `sakmor@gmail.com`
 
 ---
 
@@ -89,10 +89,10 @@ For support or privacy questions, replace this placeholder with your real suppor
 
 Better Google Form Filler 會協助使用者：
 
-- 連接 Google 帳號，
-- 讀取使用者指定的 Google Sheets 資料，
-- 將試算表欄位對應到目前開啟的 Google Forms 題目，
-- 把選定的一筆資料填入目前表單。
+- 連接 Google 帳號
+- 讀取使用者指定的 Google Sheets 資料
+- 將試算表欄位對應到目前開啟的 Google Forms 題目
+- 把選定的一筆資料填入目前表單
 
 ### 可能處理的資料
 
@@ -153,7 +153,5 @@ Better Google Form Filler 會協助使用者：
 
 ### 聯絡方式
 
-正式上架前，請把下列占位資訊換成你的真實支援方式：
-
-- 支援網址：`https://github.com/<your-account>/<your-repo>/issues`
-- 支援信箱：`<your-support-email>`
+- 支援網址：`https://github.com/sakmor/BetterGoogleForm/issues`
+- 支援信箱：`sakmor@gmail.com`

@@ -59,13 +59,11 @@ Requirements:
 - Access to the target spreadsheet
 - Best used on Google Forms `viewform` pages
 
-## URLs to fill in
+## URLs
 
-- Homepage URL: `https://github.com/<your-account>/<your-repo>`
-- Support URL: `https://github.com/<your-account>/<your-repo>/issues`
-- Privacy policy URL:
-  - preferred: GitHub Pages URL or your own site
-  - fallback: `https://github.com/<your-account>/<your-repo>/blob/main/PRIVACY.md`
+- Homepage URL: `https://github.com/sakmor/BetterGoogleForm`
+- Support URL: `https://github.com/sakmor/BetterGoogleForm/issues`
+- Privacy policy URL: `https://github.com/sakmor/BetterGoogleForm/blob/main/PRIVACY.md`
 - Official URL:
   - leave blank unless you have a verified domain in Search Console
 
