@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Google Form Filler</title>
+    <link rel="stylesheet" href="ui.css">
+  </head>
+  <body class="popup-body">
+    <main class="panel-shell popup-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Better Google Form Filler</p>
+        <h1>把試算表資料帶進表單</h1>
+        <p class="hero-copy">
+          在目前的 Google Forms 頁面打開面板，搜尋一筆資料後直接套用到表單。
+        </p>
+      </section>
+
+      <section class="info-card">
+        <div class="info-row">
+          <span>目前頁面</span>
+          <strong id="pageStatus">讀取中...</strong>
+        </div>
+        <div class="info-row">
+          <span>資料來源</span>
+          <strong id="sheetStatus">尚未設定</strong>
+        </div>
+        <div class="info-row">
+          <span>Extension ID</span>
+          <strong id="extensionId">讀取中...</strong>
+        </div>
+        <div class="info-row">
+          <span>讀取狀態</span>
+          <strong id="recordStatus">尚未讀取</strong>
+        </div>
+      </section>
+
+      <section class="button-stack">
+        <button id="togglePanelButton" class="primary-button">開啟頁面面板</button>
+        <button id="refreshButton" class="secondary-button">重新讀取資料</button>
+        <button id="signInButton" class="secondary-button">登入 Google</button>
+        <button id="optionsButton" class="ghost-button">開啟設定頁</button>
+      </section>
+
+      <p id="message" class="message-text"></p>
+    </main>
+
+    <script src="utils.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

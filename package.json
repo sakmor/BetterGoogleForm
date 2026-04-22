@@ -1,0 +1,10 @@
+{
+  "name": "better-google-form-filler",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension that fills Google Forms from Google Sheets data.",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

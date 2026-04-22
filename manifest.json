@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "Better Google Form Filler",
+  "description": "Fill Google Forms faster by searching records from Google Sheets.",
+  "version": "0.1.0",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "storage",
+    "identity",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://docs.google.com/forms/*",
+    "https://sheets.googleapis.com/*",
+    "https://www.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Better Google Form Filler",
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://docs.google.com/forms/*"
+      ],
+      "js": [
+        "utils.js",
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "oauth2": {
+    "client_id": "YOUR_GOOGLE_OAUTH_CLIENT_ID.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/spreadsheets.readonly",
+      "https://www.googleapis.com/auth/userinfo.email"
+    ]
+  }
+}

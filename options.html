@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Google Form Filler Settings</title>
+    <link rel="stylesheet" href="ui.css">
+  </head>
+  <body class="options-body">
+    <main class="panel-shell options-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Connect Google Sheets</p>
+        <h1>設定表單助手資料來源</h1>
+        <p class="hero-copy">
+          在這裡設定要讀取的 Google Sheets、預設搜尋欄位，以及表單題目與欄位的覆寫對應。
+        </p>
+      </section>
+
+      <section class="form-card">
+        <label class="field-block">
+          <span>Spreadsheet ID 或完整網址</span>
+          <input id="spreadsheetId" type="text" placeholder="https://docs.google.com/spreadsheets/d/...">
+        </label>
+
+        <label class="field-block">
+          <span>工作表名稱</span>
+          <div class="inline-row">
+            <select id="sheetName"></select>
+            <button id="loadSheetsButton" type="button" class="secondary-button">讀取工作表</button>
+          </div>
+        </label>
+
+        <label class="field-block">
+          <span>搜尋與預覽欄位</span>
+          <input id="searchFields" type="text" placeholder="Timestamp, 姓名, Email">
+          <small>用逗號分隔。這些欄位會優先用於紀錄搜尋與面板預覽。</small>
+        </label>
+
+        <label class="field-block">
+          <span>欄位對應覆寫（JSON）</span>
+          <textarea id="mappingOverrides" rows="8" spellcheck="false" placeholder='{"報名者姓名": "姓名"}'></textarea>
+          <small>左邊填 Google Forms 題目，右邊填 Google Sheets 欄位名稱。</small>
+        </label>
+      </section>
+
+      <section class="button-row">
+        <button id="saveButton" class="primary-button">儲存設定</button>
+        <button id="testButton" class="secondary-button">測試 Sheets 連線</button>
+      </section>
+
+      <section class="note-card">
+        <h2>使用前提醒</h2>
+        <p>
+          這個公開版 repo 不會提交真正的 OAuth client id。請先把
+          <code>manifest.json</code> 裡的 <code>YOUR_GOOGLE_OAUTH_CLIENT_ID</code> 替換成你自己的值。
+        </p>
+        <p>目前只會向 Google 申請讀取 Sheets 所需的唯讀權限。</p>
+      </section>
+
+      <section class="result-card">
+        <h2>測試結果</h2>
+        <pre id="testResult">尚未執行測試</pre>
+      </section>
+    </main>
+
+    <script src="utils.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

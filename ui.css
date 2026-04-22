@@ -1,0 +1,173 @@
+:root {
+  color-scheme: light;
+  --bg: #f4efe6;
+  --card: rgba(255, 252, 247, 0.92);
+  --stroke: rgba(68, 56, 43, 0.12);
+  --text: #2c241c;
+  --muted: #705d4d;
+  --accent: #006d77;
+  --accent-soft: #dff1ee;
+  --warning: #a64632;
+  --shadow: 0 24px 60px rgba(76, 55, 28, 0.14);
+  --radius-lg: 24px;
+  --radius-md: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Noto Sans TC", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(240, 199, 122, 0.4), transparent 38%),
+    linear-gradient(135deg, #f8f4eb, #efe5d6 55%, #f4efe6);
+  color: var(--text);
+}
+
+.popup-body {
+  width: 360px;
+}
+
+.panel-shell {
+  padding: 20px;
+}
+
+.popup-shell,
+.options-shell {
+  display: grid;
+  gap: 16px;
+}
+
+.hero-card,
+.info-card,
+.form-card,
+.note-card,
+.result-card {
+  padding: 18px;
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-lg);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.hero-card h1,
+.note-card h2,
+.result-card h2 {
+  margin: 0 0 10px;
+}
+
+.hero-copy,
+.note-card p,
+.message-text,
+.field-block small {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(68, 56, 43, 0.08);
+}
+
+.info-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.button-stack,
+.button-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 16px;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.16s ease, opacity 0.16s ease, background 0.16s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+.primary-button {
+  background: var(--accent);
+  color: #fff;
+}
+
+.secondary-button {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.ghost-button {
+  background: rgba(44, 36, 28, 0.08);
+  color: var(--text);
+}
+
+.field-block {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.field-block:last-child {
+  margin-bottom: 0;
+}
+
+.inline-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.inline-row select {
+  flex: 1;
+}
+
+input,
+select,
+textarea,
+pre {
+  width: 100%;
+  border: 1px solid rgba(68, 56, 43, 0.14);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text);
+  padding: 12px 14px;
+  font: inherit;
+}
+
+textarea,
+pre {
+  min-height: 160px;
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.message-text[data-error="true"],
+#testResult[data-error="true"] {
+  color: var(--warning);
+}
